@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Person person = new Person();
+            person.Name = "John Doe"; // Testing setter
+            Console.WriteLine(person.Name); // Testing getter
+            Console.WriteLine(person.ReadOnlyName); // Testing read-only property
         }
     }
 }
